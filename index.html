@@ -7,29 +7,40 @@
     <title>SketchApp</title>
 
     <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <div>SketchAPP</div>
+        <div>Sketch-APP</div>
     </header>
 
-    <form name="optionsForm">
-
-        <label id="sizeSelectorLabel" for="#sizeSelector">16x16</label>
-        <input id="sizeSelector" type="range" value="16" min="16" max="100">
+    <div class="content">    
+        <div id="container"></div>
+        <form name="optionsForm">
+            <h3 class="text-center">Options</h1>          
+        
+            <div id="radioContainer">
+                <input type="radio" id="black" name="color_mode" value="Black" checked>
+                <label for="black">Black</label><br>
+                <input type="radio" id="color" name="color_mode" value="Rainbow">
+                <label for="color">Rainbow</label><br>
+                <input type="radio" id="eraser" name="color_mode" value="Eraser">
+                <label for="eraser">Eraser</label><br>
+            </div>
+            <br>
+            <div class="text-center">
+                <label  id="sizeSelectorLabel" for="#sizeSelector">16x16</label><br>
+                <input id="sizeSelector" type="range" value="16" min="16" max="100">
+            </div>
+        </form>
+    </div>
     
-        <div id="radioContainer">
-            <input type="radio" id="black" name="color_mode" value="Black" checked>
-            <label for="black">Black</label><br>
-            <input type="radio" id="color" name="color_mode" value="Rainbow">
-            <label for="color">Rainbow</label><br>
-            <input type="radio" id="eraser" name="color_mode" value="Eraser">
-            <label for="eraser">Eraser</label><br>
-        </div>
-    </form>
-
-    <div id="container"></div>
+    <footer>
+        <span>Copyright © Claudia Olavarrieta Martinez 2023-present</span>
+    </footer>
      
     <script src="app.js"></script>
 </body>

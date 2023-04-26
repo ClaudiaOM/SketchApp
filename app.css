@@ -1,6 +1,52 @@
 
 /* ============================================== GENERAL STYLES ===================================================== */
 
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+    color: #9F1F2E;
+}
+
+header{
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;  
+    padding-right: 10%;  
+    padding-left: 10%;
+    flex-wrap: wrap-reverse;
+    padding-bottom: 5%;
+}
+
+form{
+    font-size: 40px;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+footer{
+    background-color: #9F1F2E;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
 /* ============================================ END GENERAL STYLES =================================================== */
 
@@ -16,10 +62,12 @@
 
 #container{
     display: flex;
-    width: 900px;
-    height: 600px;
+    width: 600px;
+    height: 550px;
     gap: 2px;
     flex-wrap: wrap;
+    flex-shrink: 2;
+    flex-grow: 0;
 }
 
 /* ============================================ END GRID STYLES =================================================== */

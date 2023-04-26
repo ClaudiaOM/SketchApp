@@ -1,8 +1,8 @@
 const DEFAULT_COLOR = "rgb(211, 211, 211)";
 const DEFAULT_MODE = "Black";
 const DEFAULT_SIZE = 16;
-const MAX_WIDTH = 900;
-const MAX_HEIGHT = 600;
+const MAX_WIDTH = 600;
+const MAX_HEIGHT = 550;
 
 let currentSize = DEFAULT_SIZE;
 let currentColor = DEFAULT_COLOR;
